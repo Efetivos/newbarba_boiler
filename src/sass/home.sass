@@ -1,0 +1,33 @@
+@import './partials/alias-mixins'
+
+
+//- =========================  FEATURING  ========================= -//
+//- =========================  FEATURING  ========================= -//
+.featuring
+
+    &__hold
+    &__each
+        padding: 3vh 0
+        overflow: hidden
+
+        & > *
+            margin: 0 0.5vw;
+
+    .subt
+        font-size: 1vw;
+        letter-spacing: 0.1vw;
+        padding-bottom: 4vh;
+
+        span
+            border: 1px solid var(--dark);
+            padding: 0.6vw;
+            font-size: 0.8vw;
+            border-radius: 50%;
+            color: var(--dark);
+    &__text
+        font-size: 9.3vw;
+        @include desk
+            font-size: 7vw;
+    &__img
+        width: 12vw;
+        height: 7vw;

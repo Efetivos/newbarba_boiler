@@ -1,0 +1,220 @@
+@import 'alias-mixins'
+
+
+body
+	@include sans;
+	overscroll-behavior: none;
+	overflow-x: hidden
+	background: #000
+	
+*
+	color: var(--color);
+	color: #fff
+	box-sizing: border-box
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-smooth: auto;
+	font-smooth: never;
+	font-smooth: always;
+
+.e-white 
+	background-color: #fff
+
+.t-white 
+	color: #fff
+
+.e-black 
+	background-color: #000
+
+.t-black 
+	color: #000
+
+.e-color 
+	background-color: var(--color)
+
+.e-dark
+	background-color: var(--dark)
+
+.t-dark
+	color: var(--dark)
+
+.e-decor
+	background-color: var(--decor)
+
+.e-soft
+	background-color: var(--soft)
+
+.t-decor
+	color: var(--decor)
+
+.t-line
+	color: var(--line)
+
+.t-color 
+	color: var(--color)
+
+.e-gray 
+	background-color: #6f6f6f;
+
+.t-gray 
+	color: #6f6f6f;
+
+.t-100
+	font-weight: 100
+
+.t-300
+	font-weight: 300
+
+.t-400
+	font-weight: 400
+
+.t-500
+	font-weight: 500
+
+.t-700
+	@include bold;
+
+.t-900
+	font-weight: 900
+
+.e-flex 
+    @include flex-center
+
+.e-flex-col 
+    @include flex-center-col
+
+.e-flex-wrap 
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+.e-rel 
+    position: relative
+
+.e-abs 
+    position: absolute
+
+.e-fixed 
+	position: fixed
+
+.e-wp 
+    width: 100%
+
+.e-hp 
+    height: 100%
+
+.e-85 
+    width: 85%
+
+.e-85w
+    width: 85vw
+
+.e-wvw 
+    width: 100vw
+
+
+.e-hvh 
+    height: 100vh
+
+.e-dn 
+    display: none
+
+
+.e-img-fit 
+    object-fit: cover
+
+
+.e-serif 
+    @include serif
+
+.e-sans 
+    @include sans
+
+.t-medium 
+    @include medium
+
+.t-bold 
+    @include bold
+
+
+.t-center
+	text-align: center
+
+	
+.e-hidden 
+	overflow: hidden
+
+
+.e-curp 
+	cursor: pointer
+
+h1 
+	@include serif
+	font-size: 24px
+	@include desk 
+		font-size: 36px
+	
+
+
+p 
+	color: #6f6f6f;
+	@include sans
+	font-size: 15px
+	line-height: 22px
+	margin: 5px 0;
+	@include desk 
+		font-size: 1vw;
+		line-height: 1.9vw;
+		color: #000;
+	
+
+
+h2 
+	@include serif;
+	color: var(--color);
+	font-size: 38px
+	@include desk
+		font-size: 6.5vw;
+	
+
+
+h5
+	font-size: 11px
+	@include desk
+		font-size: 0.8vw;
+.e-upper 
+	text-transform: uppercase
+
+
+button 
+	@include clear
+	@include resetbtn 
+	margin: 0
+	padding: 0
+
+.no-desk
+	@include desk
+		display: none
+
+.no-mobile
+	@include mobile
+		display: none !important
+	@include tablet
+		display: none !important
+		
+::-webkit-scrollbar
+	//-webkit-appearance: none;
+	//width: 0
+
+::-webkit-scrollbar-thumb
+	background: var(--color)
+
+
+.e-hold
+	margin: 0 auto
+	width: 85%
+	@include desk
+		width: 92.5%;
+
+.wrap
+	overflow: hidden

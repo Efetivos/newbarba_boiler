@@ -1,0 +1,95 @@
+@import 'alias-mixins'
+a
+    color: #000000;
+
+
+p
+    font-size: 16px
+    margin: 15px 0;
+    line-height: 25px;
+    @include desk
+        font-size: 1.32vw;
+        line-height: 2.2vw;
+        margin: var(--space-s) 0
+
+
+a
+    color: #000000;
+
+
+//- =========================  ULTRA SMALl  ========================= -//
+//- =========================  ULTRA SMALl  ========================= -//
+.ts-7
+
+.ts-8
+    font-size: 13px
+    line-height: 30px
+
+
+
+
+
+//- =========================  SMALL  ========================= -//
+//- =========================  SMALL  ========================= -//
+    
+
+h6, .ts-6
+    font-size: 18px;
+    line-height: 30px;
+    margin: 25px 0;
+    @include desk
+        font-size: .9vw;
+        line-height: 1vw;
+        margin-top: 0.5vw;
+
+
+h5, .ts-5
+    font-size: 20px;
+    margin: 25px 0;
+
+
+
+//- =========================  MEDIUM  ========================= -//
+//- =========================  MEDIUM  ========================= -//
+h4, .ts-4
+    @include bold
+    font-size: 26px
+    line-height: 30px;
+    @include desk
+        font-size: 1.25vw;
+        line-height: 2.2vw;
+
+
+h3, .ts-3
+    @include bold
+    font-size: 28px
+    line-height: 33px;
+    @include desk
+        font-size: 1.9vw
+        line-height: 2.1vw
+
+
+
+
+
+//- =========================  LARGE  ========================= -//
+//- =========================  LARGE  ========================= -//
+
+h2, .ts-2
+    @include bold
+    font-size: 30px
+    line-height: 36px;
+    @include desk
+        font-size: 2.54vw;
+        line-height: 2.9vw;
+    
+
+
+h1, .ts-1
+    @include bold
+    font-size: 33px;
+    line-height: 40px;
+    margin: 5px 0
+    @include desk
+        font-size: 3.8vw;
+        line-height: 4.5vw;

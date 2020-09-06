@@ -1,0 +1,19 @@
+@import 'alias-mixins'
+
+\:root
+    --space-l: 125px
+    --space-m: 75px
+    --space-s: 30px
+    @include desk
+        --space-s: 2.5vw
+        --space-m: 7.5vw;
+        --space-l: 20vw
+
+.space-p
+    margin: var(--space-p) 0
+
+.space-l
+    margin: var(--space-l) 0
+
+.space-m
+    margin: var(--space-m) 0
